@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login - Mikro Voice Chat</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #a3e4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .login-box h1 {
+      margin-bottom: 20px;
+      color: #0a79df;
+    }
+    .login-btn {
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+      padding: 12px;
+      background-color: #0a79df;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .login-btn.google {
+      background-color: #db4437;
+    }
+  </style>
 </head>
 <body>
-  <div class="login-container">
-    <img src="https://i.imgur.com/2yaf2wb.png" alt="App Logo" class="logo"> <!-- Yoso style logo -->
-    <h2>Make new friends all<br>over the world</h2>
-
-    <button class="google-btn">Sign in with Google</button>
-    <button class="yoso-btn">YoSo Account Login</button>
-
-    <p class="terms">
-      <input type="checkbox" checked> By logging in you agree to our
-      <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>
-    </p>
+  <div class="login-box">
+    <h1>Login</h1>
+    <button class="login-btn google">Sign in with Google</button>
+    <button class="login-btn">YoSo Account Login</button>
   </div>
 </body>
 </html>
