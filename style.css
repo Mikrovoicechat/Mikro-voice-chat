@@ -1,5 +1,45 @@
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #e3f2fd;
+}
+
+.app-bar {
+  background-color: #2196f3;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.room-list {
+  padding: 20px;
+}
+
+.room-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.join-btn {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+body {
+  margin: 0;
   font-family: sans-serif;
   background: linear-gradient(to bottom, #7d531a, #3e1f00);
   color: white;
