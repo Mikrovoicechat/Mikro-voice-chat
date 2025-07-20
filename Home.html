@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mikro Voice Chat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #e3f2fd;
+    }
+
+    .login-section {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .login-section h1 {
+      color: #0d47a1;
+      font-size: 28px;
+    }
+
+    .google-btn, .account-btn {
+      background-color: #0d47a1;
+      color: white;
+      padding: 15px 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .app-bar {
+      background-color: #2196f3;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .room-list {
+      padding: 20px;
+    }
+
+    .room-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .join-btn {
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #home-section {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 LOGIN SECTION -->
+  <section class="login-section" id="login-section">
+    <h1>Welcome to Mikro Voice Chat</h1>
+    <button onclick="showHome()" class="google-btn">Sign in with Google</button><br>
+    <button onclick="showHome()" class="account-btn">Mikro Account Login</button>
+  </section>
+
+  <!-- 🔹 HOME SECTION -->
+  <section id="home-section">
+    <header class="app-bar">
+      <div class="logo">🎙 Mikro</div>
+      <div class="profile-icon">👤</div>
+    </header>
+
+    <main class="room-list">
+      <h2>Available Rooms</h2>
+
+      <div class="room-card">
+        <div class="room-info">
+          <h3>Room 1 - ChitChat</h3>
+          <p>👥 12 Members | 🎤 4 Speaking</p>
+        </div>
+        <button class="join-btn">Join</button>
+      </div>
+
+      <div class="room-card">
+        <div class="room-info">
+          <h3>Room 2 - Music Zone</h3>
+          <p>👥 8 Members | 🎤 2 Speaking</p>
+        </div>
+        <button class="join-btn">Join</button>
+      </div>
+    </main>
+  </section>
+
+  <script>
+    function showHome() {
+      document.getElementById('login-section').style.display = 'none';
+      document.getElementById('home-section').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
