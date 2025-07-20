@@ -1,51 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - Mikro Voice Chat</title>
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikro Voice Chat</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #a3e4f9;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #00bfff, #87cefa);
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
-    }
-    .login-box {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .login-box h1 {
-      margin-bottom: 20px;
-      color: #0a79df;
-    }
-    .login-btn {
-      display: block;
-      width: 100%;
-      margin-top: 15px;
-      padding: 12px;
-      background-color: #0a79df;
       color: white;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-    }
-    .login-btn.google {
-      background-color: #db4437;
-    }
+    }.logo {
+  width: 100px;
+  height: 100px;
+  background-image: url('https://i.imgur.com/V8U0W0M.png'); /* Replace with your logo */
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btn {
+  width: 260px;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.google-btn {
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  color: white;
+}
+
+.account-btn {
+  background-color: white;
+  color: #00bfff;
+}
+
+.terms {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #e0f7ff;
+}
+
   </style>
-</head>
-<body>
-  <div class="login-box">
-    <h1>Login</h1>
-    <button class="login-btn google">Sign in with Google</button>
-    <button class="login-btn">YoSo Account Login</button>
-  </div>
-</body>
-</html>
+</head><body>
+  <div class="logo"></div>
+  <div class="title">Make new friends all over the world</div>
+  <button class="btn google-btn">Sign in with Google</button>
+  <button class="btn account-btn">Mikro Account Login</button>
+  <div class="terms">
+    ☑ By logging in you agree to our <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> &
+    <a href="#"
