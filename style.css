@@ -1,0 +1,42 @@
+body {
+  background-color: #d9f4ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  margin: auto;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.login-container h2 {
+  color: #00aaff;
+  margin-bottom: 30px;
+}
+
+.login-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.yoso {
+  background-color: #0088cc;
+  color: white;
+}
